@@ -1,16 +1,114 @@
-# React + Vite
+# 🍳 Recipe Finder App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive recipe discovery web application built with React and Vite. Users can search for recipes, browse recipes by category, view detailed cooking information, and save their favorite recipes for later.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🔍 Search recipes by name
 
-## React Compiler
+- 🗂️ Browse recipes by category
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🍽️ View multiple recipes from each category
 
-## Expanding the Oxlint configuration
+- 📖 View complete recipe details
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- 🧂 View ingredients and measurements
+
+- 📝 View cooking instructions
+
+- ❤️ Add and remove recipes from Favorites
+
+- 💾 Persist Favorites using browser localStorage
+
+- ⏳ Loading states for API requests
+
+- ⚠️ User-friendly error handling
+
+- 📱 Responsive design for desktop, tablet, and mobile
+
+- ♿ Accessible buttons, labels, loading states, and error messages
+
+- 🔄 Return to search results after viewing recipe details
+
+## 🛠️ Technologies Used
+
+- React
+
+- Vite
+
+- JavaScript
+
+- HTML5
+
+- CSS3
+
+- React Hooks
+
+- Browser localStorage
+
+- TheMealDB API
+
+## 🌐 API
+
+This project uses the free [TheMealDB]([https://www.themealdb.com/](https://www.themealdb.com/)) API to retrieve recipe and category data.
+
+The application uses the API to:
+
+- Search recipes
+
+- Retrieve recipes by category
+
+- Retrieve complete recipe details
+
+## 📁 Project Structure
+
+```text
+
+Recipe-Finder-App/
+
+├── public/
+
+├── src/
+
+│   ├── components/
+
+│   │   ├── CategoryFilter.jsx
+
+│   │   ├── EmptyState.jsx
+
+│   │   ├── ErrorMessage.jsx
+
+│   │   ├── Favorites.jsx
+
+│   │   ├── LoadingSpinner.jsx
+
+│   │   ├── RecipeCard.jsx
+
+│   │   ├── RecipeDetails.jsx
+
+│   │   ├── RecipeList.jsx
+
+│   │   └── SearchBar.jsx
+
+│   ├── services/
+
+│   │   └── mealApi.js
+
+│   ├── utils/
+
+│   │   └── favoritesStorage.js
+
+│   ├── App.jsx
+
+│   ├── App.css
+
+│   ├── index.css
+
+│   └── main.jsx
+
+├── index.html
+
+├── package.json
+
+└── vite.config.js
+
